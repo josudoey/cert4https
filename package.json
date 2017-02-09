@@ -1,0 +1,28 @@
+{
+  "name": "cert4https",
+  "version": "0.0.0",
+  "description": "provide a self signed cert for https",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node -e \"r=require;r('fs').writeFile('./ssl-cert-snakeoil.json',JSON.stringify(r('./self-signed')(),null,4));\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josudoey/cert4https.git"
+  },
+  "keywords": [
+    "cert",
+    "https",
+    "self-signed"
+  ],
+  "author": "JoeyFang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josudoey/cert4https/issues"
+  },
+  "homepage": "https://github.com/josudoey/cert4https#readme",
+  "dependencies": {
+    "node-forge": "^0.7.0"
+  }
+}
