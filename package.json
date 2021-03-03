@@ -1,6 +1,6 @@
 {
   "name": "cert4https",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "provide a self signed cert for https",
   "main": "index.js",
   "scripts": {
